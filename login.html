@@ -585,12 +585,12 @@ if (sessionStorage.getItem('loggedIn') === 'true') {
             console.log("Login Data:", loginData);
 
           
-            if (username === "MCA1" && password === "MCA@1") {
+            if (username === "Admin" && password === "1") {
                 sessionStorage.setItem('loggedIn', 'true');
 
                 const queryString = `?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
                 window.location.href = "Editor.html" + queryString;
-        }else if (username === "MCA2" && password === "MCA@2") {
+        }else if (username === "DesignX" && password === "@123") {
             sessionStorage.setItem('loggedIn', 'true');
             const queryString = `?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
                 window.location.href = "Editor.html" + queryString;
